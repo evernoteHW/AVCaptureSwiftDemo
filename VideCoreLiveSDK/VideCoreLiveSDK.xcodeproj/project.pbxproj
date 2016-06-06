@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		744BC5091CFD36B000CE4698 /* VideCoreLiveSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 744BC5081CFD36B000CE4698 /* VideCoreLiveSDK.h */; };
+		744BC50B1CFD36B000CE4698 /* VideCoreLiveSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 744BC50A1CFD36B000CE4698 /* VideCoreLiveSDK.m */; };
+		744BC5121CFD370E00CE4698 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744BC5111CFD370E00CE4698 /* VideoToolbox.framework */; };
+		744BC5141CFD371300CE4698 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744BC5131CFD371300CE4698 /* OpenGLES.framework */; };
+		744BC5161CFD371900CE4698 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744BC5151CFD371900CE4698 /* Foundation.framework */; };
+		744BC5181CFD372100CE4698 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744BC5171CFD372100CE4698 /* CoreVideo.framework */; };
+		744BC51A1CFD372800CE4698 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744BC5191CFD372800CE4698 /* CoreGraphics.framework */; };
+		744BC51C1CFD378D00CE4698 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744BC51B1CFD378D00CE4698 /* CFNetwork.framework */; };
+		744BC51E1CFD379A00CE4698 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744BC51D1CFD379A00CE4698 /* AVFoundation.framework */; };
+		744BC5201CFD37A300CE4698 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744BC51F1CFD37A300CE4698 /* AudioToolbox.framework */; };
+		7451894F1CFD6F4700E2AD1B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7451894E1CFD6F4700E2AD1B /* CoreMedia.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		744BC5031CFD36B000CE4698 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				744BC5091CFD36B000CE4698 /* VideCoreLiveSDK.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		744BC5051CFD36B000CE4698 /* libVideCoreLiveSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVideCoreLiveSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		744BC5081CFD36B000CE4698 /* VideCoreLiveSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideCoreLiveSDK.h; sourceTree = "<group>"; };
+		744BC50A1CFD36B000CE4698 /* VideCoreLiveSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideCoreLiveSDK.m; sourceTree = "<group>"; };
+		744BC5111CFD370E00CE4698 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		744BC5131CFD371300CE4698 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		744BC5151CFD371900CE4698 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		744BC5171CFD372100CE4698 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		744BC5191CFD372800CE4698 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		744BC51B1CFD378D00CE4698 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		744BC51D1CFD379A00CE4698 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		744BC51F1CFD37A300CE4698 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7451894E1CFD6F4700E2AD1B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		744BC5021CFD36B000CE4698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7451894F1CFD6F4700E2AD1B /* CoreMedia.framework in Frameworks */,
+				744BC5201CFD37A300CE4698 /* AudioToolbox.framework in Frameworks */,
+				744BC51E1CFD379A00CE4698 /* AVFoundation.framework in Frameworks */,
+				744BC51C1CFD378D00CE4698 /* CFNetwork.framework in Frameworks */,
+				744BC51A1CFD372800CE4698 /* CoreGraphics.framework in Frameworks */,
+				744BC5181CFD372100CE4698 /* CoreVideo.framework in Frameworks */,
+				744BC5161CFD371900CE4698 /* Foundation.framework in Frameworks */,
+				744BC5141CFD371300CE4698 /* OpenGLES.framework in Frameworks */,
+				744BC5121CFD370E00CE4698 /* VideoToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		744BC4FC1CFD36B000CE4698 = {
+			isa = PBXGroup;
+			children = (
+				7451894E1CFD6F4700E2AD1B /* CoreMedia.framework */,
+				744BC51F1CFD37A300CE4698 /* AudioToolbox.framework */,
+				744BC51D1CFD379A00CE4698 /* AVFoundation.framework */,
+				744BC51B1CFD378D00CE4698 /* CFNetwork.framework */,
+				744BC5191CFD372800CE4698 /* CoreGraphics.framework */,
+				744BC5171CFD372100CE4698 /* CoreVideo.framework */,
+				744BC5151CFD371900CE4698 /* Foundation.framework */,
+				744BC5131CFD371300CE4698 /* OpenGLES.framework */,
+				744BC5111CFD370E00CE4698 /* VideoToolbox.framework */,
+				744BC5071CFD36B000CE4698 /* VideCoreLiveSDK */,
+				744BC5061CFD36B000CE4698 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		744BC5061CFD36B000CE4698 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				744BC5051CFD36B000CE4698 /* libVideCoreLiveSDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		744BC5071CFD36B000CE4698 /* VideCoreLiveSDK */ = {
+			isa = PBXGroup;
+			children = (
+				744BC5081CFD36B000CE4698 /* VideCoreLiveSDK.h */,
+				744BC50A1CFD36B000CE4698 /* VideCoreLiveSDK.m */,
+			);
+			path = VideCoreLiveSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		744BC5041CFD36B000CE4698 /* VideCoreLiveSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 744BC50E1CFD36B000CE4698 /* Build configuration list for PBXNativeTarget "VideCoreLiveSDK" */;
+			buildPhases = (
+				744BC5011CFD36B000CE4698 /* Sources */,
+				744BC5021CFD36B000CE4698 /* Frameworks */,
+				744BC5031CFD36B000CE4698 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideCoreLiveSDK;
+			productName = VideCoreLiveSDK;
+			productReference = 744BC5051CFD36B000CE4698 /* libVideCoreLiveSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		744BC4FD1CFD36B000CE4698 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = WeiHu;
+				TargetAttributes = {
+					744BC5041CFD36B000CE4698 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 744BC5001CFD36B000CE4698 /* Build configuration list for PBXProject "VideCoreLiveSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 744BC4FC1CFD36B000CE4698;
+			productRefGroup = 744BC5061CFD36B000CE4698 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				744BC5041CFD36B000CE4698 /* VideCoreLiveSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		744BC5011CFD36B000CE4698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744BC50B1CFD36B000CE4698 /* VideCoreLiveSDK.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		744BC50C1CFD36B000CE4698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		744BC50D1CFD36B000CE4698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		744BC50F1CFD36B000CE4698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		744BC5101CFD36B000CE4698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		744BC5001CFD36B000CE4698 /* Build configuration list for PBXProject "VideCoreLiveSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744BC50C1CFD36B000CE4698 /* Debug */,
+				744BC50D1CFD36B000CE4698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		744BC50E1CFD36B000CE4698 /* Build configuration list for PBXNativeTarget "VideCoreLiveSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744BC50F1CFD36B000CE4698 /* Debug */,
+				744BC5101CFD36B000CE4698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 744BC4FD1CFD36B000CE4698 /* Project object */;
+}

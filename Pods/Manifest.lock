@@ -1,0 +1,32 @@
+PODS:
+  - boost (1.59.0):
+    - boost/graph-includes (= 1.59.0)
+    - boost/math-includes (= 1.59.0)
+    - boost/numeric-includes (= 1.59.0)
+    - boost/pointer_cast-includes (= 1.59.0)
+    - boost/preprocessor-includes (= 1.59.0)
+    - boost/shared_ptr-includes (= 1.59.0)
+    - boost/string_algorithms-includes (= 1.59.0)
+  - boost/graph-includes (1.59.0)
+  - boost/math-includes (1.59.0)
+  - boost/numeric-includes (1.59.0)
+  - boost/pointer_cast-includes (1.59.0)
+  - boost/preprocessor-includes (1.59.0)
+  - boost/shared_ptr-includes (1.59.0)
+  - boost/string_algorithms-includes (1.59.0)
+  - glm (0.9.4.6)
+  - NSLogger (1.7.0):
+    - NSLogger/Standard (= 1.7.0)
+  - NSLogger/Standard (1.7.0)
+
+DEPENDENCIES:
+  - boost
+  - glm
+  - NSLogger
+
+SPEC CHECKSUMS:
+  boost: 30a15ffb6d9aa4646dd3caffc960753f4cb4ca4e
+  glm: e22c8d9df10404059b19c2952f9fa44d9a9f3056
+  NSLogger: daa17368272ddf10a0850c218fe49de23b50f2eb
+
+COCOAPODS: 0.38.2
