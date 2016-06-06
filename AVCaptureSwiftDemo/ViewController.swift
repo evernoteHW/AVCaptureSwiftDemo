@@ -58,7 +58,7 @@ import Foundation
     func btnConnectTouch(sender: AnyObject) {
         switch session.rtmpSessionState {
         case .None, .PreviewStarted, .Ended, .Error:
-            session.startRtmpSessionWithURL("rtmp://10.14.226.91/live", andStreamKey: "myStream")
+            session.startRtmpSessionWithURL("rtmp://10.14.226.110/live", andStreamKey: "myStream")
         default:
             session.endRtmpSession()
         }
@@ -104,8 +104,8 @@ import Foundation
     func playRecordAction() {
     
         
-//        let vc = KxMovieViewController.movieViewControllerWithContentPath("rtmp://10.14.226.82/live/myStream", parameters: nil)
-//        self.presentViewController(vc as! KxMovieViewController, animated: true, completion: nil)
+        let vc = KxMovieViewController.movieViewControllerWithContentPath("rtmp://10.14.226.110/live/myStream", parameters: nil)
+        self.presentViewController(vc as! KxMovieViewController, animated: true, completion: nil)
 
     }
 }

@@ -83,13 +83,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AVCaptureSwiftDemo/Vendor/kxmovie/KxMovieDecoder.m"
-            timestampString = "486627783.690846"
+            filePath = "AVCaptureSwiftDemo/Vendor/kxmovie/KxMovieViewController.m"
+            timestampString = "486894852.848828"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "735"
-            endingLineNumber = "735"
-            landmarkName = "-openAudioStream"
+            startingLineNumber = "1036"
+            endingLineNumber = "1036"
+            landmarkName = "-asyncDecodeFrames"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -99,60 +99,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AVCaptureSwiftDemo/Vendor/kxmovie/KxMovieDecoder.m"
-            timestampString = "486629574.79203"
+            filePath = "AVCaptureSwiftDemo/Vendor/kxmovie/KxMovieViewController.m"
+            timestampString = "486894918.47035"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "800"
-            endingLineNumber = "800"
-            landmarkName = "-openAudioStream:"
+            startingLineNumber = "942"
+            endingLineNumber = "942"
+            landmarkName = "-addFrames:"
             landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AVCaptureSwiftDemo/Vendor/kxmovie/KxMovieDecoder.m"
-            timestampString = "486631896.323196"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "804"
-            endingLineNumber = "804"
-            landmarkName = "-openAudioStream:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AVCaptureSwiftDemo/Vendor/kxmovie/KxMovieDecoder.m"
-            timestampString = "486633177.143455"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1374"
-            endingLineNumber = "1374">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AVCaptureSwiftDemo/Vendor/kxmovie/KxMovieDecoder.m"
-            timestampString = "486640077.72113"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1396"
-            endingLineNumber = "1396"
-            landmarkName = "FFLog()"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

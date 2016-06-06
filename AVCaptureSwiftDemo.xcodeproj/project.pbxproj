@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3BE8AC84C68FD9BC681F89B1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF74BD5C720C3C387D0C7293 /* libPods.a */; };
-		742E285D1D025E8700E2FF95 /* MovieDecoeder.m in Sources */ = {isa = PBXBuildFile; fileRef = 742E285C1D025E8700E2FF95 /* MovieDecoeder.m */; };
 		743BF0C91CF742C2006B3C05 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 743BF0C81CF742C2006B3C05 /* libiconv.tbd */; };
 		743BF0CB1CF742CB006B3C05 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 743BF0CA1CF742CB006B3C05 /* libz.tbd */; };
 		743BF0CD1CF742D4006B3C05 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 743BF0CC1CF742D4006B3C05 /* libbz2.tbd */; };
@@ -20,6 +19,8 @@
 		744B86D41CFD29FE00CE4698 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744B86D31CFD29FE00CE4698 /* CoreVideo.framework */; };
 		744B86D61CFD2A0700CE4698 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744B86D51CFD2A0700CE4698 /* OpenGLES.framework */; };
 		748C3AFC1CF7F52B007D2578 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748C3AFB1CF7F52B007D2578 /* CoreMedia.framework */; };
+		7494C4911D05432900CAD5CB /* MovieDecoeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7494C4901D05432900CAD5CB /* MovieDecoeder.swift */; };
+		7494C4931D05443C00CAD5CB /* SwiftGlobal-Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7494C4921D05443C00CAD5CB /* SwiftGlobal-Header.swift */; };
 		74A36F561CEF5FBC00C030B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A36F551CEF5FBC00C030B3 /* AppDelegate.swift */; };
 		74A36F581CEF5FBC00C030B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A36F571CEF5FBC00C030B3 /* ViewController.swift */; };
 		74A36F5B1CEF5FBC00C030B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A36F591CEF5FBC00C030B3 /* Main.storyboard */; };
@@ -104,8 +105,6 @@
 /* Begin PBXFileReference section */
 		1A09BE4637032C3CE36EC9F4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4B05C6D4DC2E0BE45735D6E6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		742E285B1D025E8700E2FF95 /* MovieDecoeder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDecoeder.h; sourceTree = "<group>"; };
-		742E285C1D025E8700E2FF95 /* MovieDecoeder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDecoeder.m; sourceTree = "<group>"; };
 		743BF0C41CF7429B006B3C05 /* AVCaptureSwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVCaptureSwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		743BF0C81CF742C2006B3C05 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		743BF0CA1CF742CB006B3C05 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -118,6 +117,8 @@
 		744B86D31CFD29FE00CE4698 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		744B86D51CFD2A0700CE4698 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		748C3AFB1CF7F52B007D2578 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		7494C4901D05432900CAD5CB /* MovieDecoeder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDecoeder.swift; sourceTree = "<group>"; };
+		7494C4921D05443C00CAD5CB /* SwiftGlobal-Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftGlobal-Header.swift"; sourceTree = "<group>"; };
 		74A36F521CEF5FBC00C030B3 /* AVCaptureSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVCaptureSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A36F551CEF5FBC00C030B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74A36F571CEF5FBC00C030B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -410,8 +411,7 @@
 		744A60781D015B3F00D76969 /* MovieDecoeder */ = {
 			isa = PBXGroup;
 			children = (
-				742E285B1D025E8700E2FF95 /* MovieDecoeder.h */,
-				742E285C1D025E8700E2FF95 /* MovieDecoeder.m */,
+				7494C4901D05432900CAD5CB /* MovieDecoeder.swift */,
 			);
 			path = MovieDecoeder;
 			sourceTree = "<group>";
@@ -447,6 +447,7 @@
 				74A36F5C1CEF5FBC00C030B3 /* Assets.xcassets */,
 				74A36F5E1CEF5FBC00C030B3 /* LaunchScreen.storyboard */,
 				74A36F611CEF5FBC00C030B3 /* Info.plist */,
+				7494C4921D05443C00CAD5CB /* SwiftGlobal-Header.swift */,
 				743BF0C41CF7429B006B3C05 /* AVCaptureSwiftDemo-Bridging-Header.h */,
 				744A60781D015B3F00D76969 /* MovieDecoeder */,
 				74BF01171D00129C002E9DAC /* Vendor */,
@@ -1214,6 +1215,7 @@
 				74BF021C1D00129C002E9DAC /* SepiaVideoFilter.cpp in Sources */,
 				74BF02231D00129C002E9DAC /* CameraSource.mm in Sources */,
 				74BF02291D00129C002E9DAC /* PixelBuffer.cpp in Sources */,
+				7494C4911D05432900CAD5CB /* MovieDecoeder.swift in Sources */,
 				74BF02321D00129C002E9DAC /* AACPacketizer.cpp in Sources */,
 				74BF02271D00129C002E9DAC /* Golomb.cpp in Sources */,
 				74BF02261D00129C002E9DAC /* TCPThroughputAdaptation.cpp in Sources */,
@@ -1237,7 +1239,6 @@
 				74BF021E1D00129C002E9DAC /* AudioMixer.cpp in Sources */,
 				74BF02191D00129C002E9DAC /* GlowVideoFilter.cpp in Sources */,
 				74BF021D1D00129C002E9DAC /* FilterFactory.cpp in Sources */,
-				742E285D1D025E8700E2FF95 /* MovieDecoeder.m in Sources */,
 				74BF02161D00129C002E9DAC /* BasicVideoFilterBGRA.cpp in Sources */,
 				74BF02211D00129C002E9DAC /* RTMPSession.cpp in Sources */,
 				74BF02311D00129C002E9DAC /* PositionTransform.cpp in Sources */,
@@ -1245,6 +1246,7 @@
 				74BF021B1D00129C002E9DAC /* InvertColorsVideoFilter.cpp in Sources */,
 				74BF02371D00129C002E9DAC /* X264Manager.m in Sources */,
 				74BF02121D00129C002E9DAC /* H264HwEncoderImpl.m in Sources */,
+				7494C4931D05443C00CAD5CB /* SwiftGlobal-Header.swift in Sources */,
 				74BF021F1D00129C002E9DAC /* GenericAudioMixer.cpp in Sources */,
 				74BF02201D00129C002E9DAC /* GLESVideoMixer.mm in Sources */,
 				74BF021A1D00129C002E9DAC /* GrayscaleVideoFilter.cpp in Sources */,

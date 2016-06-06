@@ -107,5 +107,16 @@
     
     return ms;
 }
++ (BOOL) isNetworkPath: (NSString *) path
+{
+    NSRange r = [path rangeOfString:@":"];
+    if (r.location == NSNotFound)
+        return NO;
+    NSString *scheme = [path substringToIndex:r.length];
+    if ([scheme isEqualToString:@"file"])
+        return NO;
+    return YES;
+}
+
 
 @end

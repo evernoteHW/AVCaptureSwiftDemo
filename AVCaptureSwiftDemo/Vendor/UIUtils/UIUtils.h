@@ -16,5 +16,6 @@
 + (NSArray *)parseDialogue:(NSString *)dialogue
                  numFields:(NSUInteger)numFields;
 + (NSString *)removeCommandsFromEventText:(NSString *)text;
++ (BOOL) isNetworkPath: (NSString *) path;
 
 @end

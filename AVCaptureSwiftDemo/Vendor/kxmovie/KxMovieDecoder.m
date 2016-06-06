@@ -21,60 +21,6 @@
 #import "UIUtils.h"
 ////////////////////////////////////////////////////////////////////////////////
 NSString * kxmovieErrorDomain = @"ru.kolyvan.kxmovie";
-static void FFLog(void* context, int level, const char* format, va_list args);
-
-static NSError * kxmovieError (NSInteger code, id info)
-{
-    NSDictionary *userInfo = nil;
-    
-    if ([info isKindOfClass: [NSDictionary class]]) {
-        
-        userInfo = info;
-        
-    } else if ([info isKindOfClass: [NSString class]]) {
-        
-        userInfo = @{ NSLocalizedDescriptionKey : info };
-    }
-    
-    return [NSError errorWithDomain:kxmovieErrorDomain
-                               code:code
-                           userInfo:userInfo];
-}
-
-static NSString * errorMessage (kxMovieError errorCode)
-{
-    switch (errorCode) {
-        case kxMovieErrorNone:
-            return @"";
-            
-        case kxMovieErrorOpenFile:
-            return NSLocalizedString(@"Unable to open file", nil);
-            
-        case kxMovieErrorStreamInfoNotFound:
-            return NSLocalizedString(@"Unable to find stream information", nil);
-            
-        case kxMovieErrorStreamNotFound:
-            return NSLocalizedString(@"Unable to find stream", nil);
-            
-        case kxMovieErrorCodecNotFound:
-            return NSLocalizedString(@"Unable to find codec", nil);
-            
-        case kxMovieErrorOpenCodec:
-            return NSLocalizedString(@"Unable to open codec", nil);
-            
-        case kxMovieErrorAllocateFrame:
-            return NSLocalizedString(@"Unable to allocate frame", nil);
-            
-        case kxMovieErroSetupScaler:
-            return NSLocalizedString(@"Unable to setup scaler", nil);
-            
-        case kxMovieErroReSampler:
-            return NSLocalizedString(@"Unable to setup resampler", nil);
-            
-        case kxMovieErroUnsupported:
-            return NSLocalizedString(@"The ability is not supported", nil);
-    }
-}
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -140,18 +86,6 @@ static NSData * copyFrameData(UInt8 *src, int linesize, int width, int height)
     return md;
 }
 
-static BOOL isNetworkPath (NSString *path)
-{
-    NSRange r = [path rangeOfString:@":"];
-    if (r.location == NSNotFound)
-        return NO;
-    NSString *scheme = [path substringToIndex:r.length];
-    if ([scheme isEqualToString:@"file"])
-        return NO;
-    return YES;
-}
-
-static int interrupt_callback(void *ctx);
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -373,7 +307,7 @@ static int interrupt_callback(void *ctx);
     [self closeAudioStream];
     kxMovieError errCode = [self openAudioStream: audioStream];
     if (kxMovieErrorNone != errCode) {
-        LoggerAudio(0, @"%@", errorMessage(errCode));
+        
     }
 }
 
@@ -397,7 +331,7 @@ static int interrupt_callback(void *ctx);
         NSInteger subtitleStream = [_subtitleStreams[selected] integerValue];
         kxMovieError errCode = [self openSubtitleStream:subtitleStream];
         if (kxMovieErrorNone != errCode) {
-            LoggerStream(0, @"%@", errorMessage(errCode));
+            
         }
     }
 }
@@ -551,7 +485,6 @@ static int interrupt_callback(void *ctx);
 
 + (void)initialize
 {
-    av_log_set_callback(FFLog);
     av_register_all();
     avformat_network_init();
 }
@@ -580,7 +513,7 @@ static int interrupt_callback(void *ctx);
     NSAssert(path, @"nil path");
     NSAssert(!_formatCtx, @"already open");
     
-    _isNetwork = isNetworkPath(path);
+    _isNetwork = [UIUtils isNetworkPath:path];
     
     static BOOL needNetworkInit = YES;
     if (needNetworkInit && _isNetwork) {
@@ -614,10 +547,7 @@ static int interrupt_callback(void *ctx);
     if (errCode != kxMovieErrorNone) {
         
         [self closeFile];
-        NSString *errMsg = errorMessage(errCode);
-        LoggerStream(0, @"%@, %@", errMsg, path.lastPathComponent);
         if (perror)
-            *perror = kxmovieError(errCode, errMsg);
         return NO;
     }
         
@@ -633,9 +563,6 @@ static int interrupt_callback(void *ctx);
         formatCtx = avformat_alloc_context();
         if (!formatCtx)
             return kxMovieErrorOpenFile;
-        
-        AVIOInterruptCB cb = {interrupt_callback, (__bridge void *)(self)};
-        formatCtx->interrupt_callback = cb;
     }
     //检测了文件的头部
     if (avformat_open_input(&formatCtx, [path cStringUsingEncoding: NSUTF8StringEncoding], NULL, NULL) < 0) {
@@ -655,7 +582,6 @@ static int interrupt_callback(void *ctx);
     
     _formatCtx = formatCtx;
     
-    NSLog(@"%@",formatCtx->streams);
     return kxMovieErrorNone;
 }
 
@@ -1369,44 +1295,4 @@ static int interrupt_callback(void *ctx);
 }
 
 @end
-
-//////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////
-
-static int interrupt_callback(void *ctx)
-{
-    if (!ctx)
-        return 0;
-    __unsafe_unretained KxMovieDecoder *p = (__bridge KxMovieDecoder *)ctx;
-    const BOOL r = [p interruptDecoder];
-    if (r) LoggerStream(1, @"DEBUG: INTERRUPT_CALLBACK!");
-    return r;
-}
-
-//////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////
-
-
-static void FFLog(void* context, int level, const char* format, va_list args) {
-    @autoreleasepool {
-        //Trim time at the beginning and new line at the end
-        NSString* message = [[NSString alloc] initWithFormat: [NSString stringWithUTF8String: format] arguments: args];
-        switch (level) {
-            case 0:
-            case 1:
-                LoggerStream(0, @"%@", [message stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]]);
-                break;
-            case 2:
-                LoggerStream(1, @"%@", [message stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]]);
-                break;
-            case 3:
-            case 4:
-                LoggerStream(2, @"%@", [message stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]]);
-                break;
-            default:
-                LoggerStream(3, @"%@", [message stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]]);
-                break;
-        }
-    }
-}
 
