@@ -83,13 +83,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AVCaptureSwiftDemo/Vendor/kxmovie/KxMovieViewController.m"
-            timestampString = "486894852.848828"
+            filePath = "AVCaptureSwiftDemo/Vendor/VideoCoreSDK/mixers/GenericAudioMixer.cpp"
+            timestampString = "486897149.037283"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1036"
-            endingLineNumber = "1036"
-            landmarkName = "-asyncDecodeFrames"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "GenericAudioMixer::pushBuffer(const uint8_t* const data, size_t size, IMetadata&amp; metadata)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -99,13 +99,237 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AVCaptureSwiftDemo/Vendor/kxmovie/KxMovieViewController.m"
-            timestampString = "486894918.47035"
+            filePath = "AVCaptureSwiftDemo/Vendor/kxmovie/KxMovieDecoder.m"
+            timestampString = "486964460.462366"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "942"
-            endingLineNumber = "942"
-            landmarkName = "-addFrames:"
+            startingLineNumber = "590"
+            endingLineNumber = "590"
+            landmarkName = "-info"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVCaptureSwiftDemo/Vendor/kxmovie/KxMovieDecoder.m"
+            timestampString = "486964495.472744"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "582"
+            endingLineNumber = "582"
+            landmarkName = "-info"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVCaptureSwiftDemo/Vendor/kxmovie/KxMovieDecoder.m"
+            timestampString = "486964501.345031"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "578"
+            endingLineNumber = "578"
+            landmarkName = "-info"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[KxMovieDecoder openVideoStream]"
+                  moduleName = "AVCaptureSwiftDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/weihu/Desktop/AVCaptureSwiftDemo/AVCaptureSwiftDemo/Vendor/kxmovie/KxMovieDecoder.m"
+                  timestampString = "486964501.351313"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "578"
+                  endingLineNumber = "578"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[KxMovieDecoder openVideoStream]"
+                  moduleName = "AVCaptureSwiftDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/weihu/Desktop/AVCaptureSwiftDemo/AVCaptureSwiftDemo/Vendor/kxmovie/KxMovieDecoder.m"
+                  timestampString = "486964501.351448"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "578"
+                  endingLineNumber = "578"
+                  offsetFromSymbolStart = "236">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVCaptureSwiftDemo/Vendor/kxmovie/KxMovieDecoder.m"
+            timestampString = "486964572.512721"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "649"
+            endingLineNumber = "649"
+            landmarkName = "-videoStreamFormatName"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[KxMovieDecoder openAudioStream]"
+                  moduleName = "AVCaptureSwiftDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/weihu/Desktop/AVCaptureSwiftDemo/AVCaptureSwiftDemo/Vendor/kxmovie/KxMovieDecoder.m"
+                  timestampString = "486964572.515768"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "649"
+                  endingLineNumber = "649"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[KxMovieDecoder openAudioStream]"
+                  moduleName = "AVCaptureSwiftDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/weihu/Desktop/AVCaptureSwiftDemo/AVCaptureSwiftDemo/Vendor/kxmovie/KxMovieDecoder.m"
+                  timestampString = "486964572.515887"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "649"
+                  endingLineNumber = "649"
+                  offsetFromSymbolStart = "212">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVCaptureSwiftDemo/Vendor/kxmovie/KxMovieDecoder.m"
+            timestampString = "486977122.959093"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "863"
+            endingLineNumber = "863"
+            landmarkName = "-openAudioStream"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVCaptureSwiftDemo/Vendor/VideoCoreSDK/sources/iOS/CameraSource.mm"
+            timestampString = "486985435.49898"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "407"
+            endingLineNumber = "407"
+            landmarkName = "CameraSource::bufferCaptured(CVPixelBufferRef pixelBufferRef)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVCaptureSwiftDemo/Vendor/VideoCoreSDK/transforms/AspectTransform.cpp"
+            timestampString = "486985444.893797"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "AspectTransform::pushBuffer(const uint8_t *const data, size_t size, videocore::IMetadata &amp;metadata)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVCaptureSwiftDemo/Vendor/VideoCoreSDK/transforms/PositionTransform.cpp"
+            timestampString = "486985461.509104"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "PositionTransform::pushBuffer(const uint8_t *const data, size_t size, videocore::IMetadata &amp;metadata)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVCaptureSwiftDemo/Vendor/VideoCoreSDK/mixers/iOS/GLESVideoMixer.mm"
+            timestampString = "486985706.503166"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "420"
+            endingLineNumber = "420"
+            landmarkName = "GLESVideoMixer::pushBuffer(const uint8_t *const data, size_t size, videocore::IMetadata &amp;metadata)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVCaptureSwiftDemo/Vendor/VideoCoreSDK/transforms/Split.cpp"
+            timestampString = "486986055.063139"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "Split::pushBuffer(const uint8_t* const data, size_t size, IMetadata&amp; metadata)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVCaptureSwiftDemo/Vendor/VideoCoreSDK/rtmp/RTMPSession.cpp"
+            timestampString = "486986079.655549"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "RTMPSession::pushBuffer(const uint8_t* const data, size_t size, IMetadata&amp; metadata)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
