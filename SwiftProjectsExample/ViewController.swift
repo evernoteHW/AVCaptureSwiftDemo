@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  AVCaptureSwiftDemo
+//  SwiftProjectsExample
 //
 //  Created by WeiHu on 16/5/20.
 //  Copyright © 2016年 WeiHu. All rights reserved.

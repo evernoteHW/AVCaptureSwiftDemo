@@ -78,7 +78,6 @@
 		7453DA401D07AF3E0060A95A /* X264Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7453DA051D07AF3D0060A95A /* X264Manager.m */; };
 		7453DA411D07AF3E0060A95A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7453DA061D07AF3D0060A95A /* ViewController.swift */; };
 		748C3AFC1CF7F52B007D2578 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748C3AFB1CF7F52B007D2578 /* CoreMedia.framework */; };
-		74A36F6B1CEF5FBC00C030B3 /* SwiftProjectsExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A36F6A1CEF5FBC00C030B3 /* SwiftProjectsExampleTests.swift */; };
 		74A36F761CEF5FBC00C030B3 /* AVCaptureSwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A36F751CEF5FBC00C030B3 /* AVCaptureSwiftDemoUITests.swift */; };
 		74A36F841CEF5FE900C030B3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A36F831CEF5FE900C030B3 /* AVFoundation.framework */; };
 		74A36F861CEF5FF000C030B3 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A36F851CEF5FF000C030B3 /* AssetsLibrary.framework */; };
@@ -340,8 +339,6 @@
 		748C3AFB1CF7F52B007D2578 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		74A36F521CEF5FBC00C030B3 /* SwiftProjectsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProjectsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A36F661CEF5FBC00C030B3 /* SwiftProjectsExample.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftProjectsExample.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		74A36F6A1CEF5FBC00C030B3 /* SwiftProjectsExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProjectsExampleTests.swift; sourceTree = "<group>"; };
-		74A36F6C1CEF5FBC00C030B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74A36F711CEF5FBC00C030B3 /* SwiftProjectsExample.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftProjectsExample.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A36F751CEF5FBC00C030B3 /* AVCaptureSwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureSwiftDemoUITests.swift; sourceTree = "<group>"; };
 		74A36F771CEF5FBC00C030B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -415,12 +412,12 @@
 			children = (
 				7453D8FD1D07AF3D0060A95A /* AppDelegate.swift */,
 				7453DA061D07AF3D0060A95A /* ViewController.swift */,
-				7453D8FE1D07AF3D0060A95A /* Assets.xcassets */,
 				7453D8FF1D07AF3D0060A95A /* SwiftProjectsExample-Bridging-Header.h */,
 				7453D9001D07AF3D0060A95A /* LaunchScreen.storyboard */,
 				7453D9021D07AF3D0060A95A /* Main.storyboard */,
 				7453D9041D07AF3D0060A95A /* Info.plist */,
 				7453D9071D07AF3D0060A95A /* SwiftGlobal-Header.swift */,
+				7453D8FE1D07AF3D0060A95A /* Assets.xcassets */,
 				7453D9051D07AF3D0060A95A /* MovieDecoeder */,
 				7453D9081D07AF3D0060A95A /* Vendor */,
 			);
@@ -986,8 +983,7 @@
 			isa = PBXGroup;
 			children = (
 				7453D8FC1D07AF3D0060A95A /* SwiftProjectsExample */,
-				74A36F691CEF5FBC00C030B3 /* SwiftProjectsExampleTests */,
-				74A36F741CEF5FBC00C030B3 /* AVCaptureSwiftDemoUITests */,
+				74A36F741CEF5FBC00C030B3 /* SwiftProjectsExampleUITests */,
 				74A36F531CEF5FBC00C030B3 /* Products */,
 				3884DBC6012A12A049A7E89F /* Pods */,
 				B417C7D2A46176081B5AABC9 /* Frameworks */,
@@ -1004,22 +1000,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		74A36F691CEF5FBC00C030B3 /* SwiftProjectsExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				74A36F6A1CEF5FBC00C030B3 /* SwiftProjectsExampleTests.swift */,
-				74A36F6C1CEF5FBC00C030B3 /* Info.plist */,
-			);
-			name = SwiftProjectsExampleTests;
-			path = AVCaptureSwiftDemoTests;
-			sourceTree = "<group>";
-		};
-		74A36F741CEF5FBC00C030B3 /* AVCaptureSwiftDemoUITests */ = {
+		74A36F741CEF5FBC00C030B3 /* SwiftProjectsExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
 				74A36F751CEF5FBC00C030B3 /* AVCaptureSwiftDemoUITests.swift */,
 				74A36F771CEF5FBC00C030B3 /* Info.plist */,
 			);
+			name = SwiftProjectsExampleUITests;
 			path = AVCaptureSwiftDemoUITests;
 			sourceTree = "<group>";
 		};
@@ -1267,7 +1254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74A36F6B1CEF5FBC00C030B3 /* SwiftProjectsExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1415,10 +1401,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AVCaptureSwiftDemo/FFmpeg-iOS/lib",
-					"$(PROJECT_DIR)/AVCaptureSwiftDemo/x264-iOS/lib",
-					"$(PROJECT_DIR)/AVCaptureSwiftDemo/Vendor/FFmpeg-iOS/lib",
-					"$(PROJECT_DIR)/AVCaptureSwiftDemo/Vendor/x264-iOS/lib",
 					"$(PROJECT_DIR)/SwiftProjectsExample/Vendor/FFmpeg-iOS/lib",
 					"$(PROJECT_DIR)/SwiftProjectsExample/Vendor/x264-iOS/lib",
 				);
@@ -1445,10 +1427,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AVCaptureSwiftDemo/FFmpeg-iOS/lib",
-					"$(PROJECT_DIR)/AVCaptureSwiftDemo/x264-iOS/lib",
-					"$(PROJECT_DIR)/AVCaptureSwiftDemo/Vendor/FFmpeg-iOS/lib",
-					"$(PROJECT_DIR)/AVCaptureSwiftDemo/Vendor/x264-iOS/lib",
 					"$(PROJECT_DIR)/SwiftProjectsExample/Vendor/FFmpeg-iOS/lib",
 					"$(PROJECT_DIR)/SwiftProjectsExample/Vendor/x264-iOS/lib",
 				);

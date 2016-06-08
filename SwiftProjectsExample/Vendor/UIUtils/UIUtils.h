@@ -1,6 +1,6 @@
 //
 //  Test.h
-//  AVCaptureSwiftDemo
+//  SwiftProjectsExample
 //
 //  Created by WeiHu on 16/5/27.
 //  Copyright © 2016年 WeiHu. All rights reserved.
